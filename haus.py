@@ -1,13 +1,14 @@
 import turtle as t
 
 a = 100
-b = a / 2
+b = 0.5 * a * pow(2, 0.5)
 
 t.setup(width=400, height=300)
 t.up()
 t.goto(-50, -50)
 t.down()
 t.left(90)
+t.width(2)
 t.forward(a)
 t.right(45)
 t.forward(b)
@@ -23,7 +24,3 @@ t.right(135)
 t.forward(2 * b)
 t.right(135)
 t.forward(a)
-if t.onkeypress(key=a):
-    t.showturtle
-elif t.onkeypress(key=d):
-    t.hideturtle
